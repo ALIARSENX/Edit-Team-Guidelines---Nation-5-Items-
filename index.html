@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Team Guidelines - Nation.pdf</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            padding: 30px 20px; 
+            line-height: 1.7; 
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+            color: #2c3e50; 
+        }
+        h1 { 
+            text-align: center; 
+            color: #2c3e50; 
+            border-bottom: 4px solid #3498db; 
+            padding-bottom: 20px; 
+            margin-bottom: 40px; 
+            font-size: 2.2em; 
+        }
+        .guideline { 
+            background: white; 
+            margin: 25px 0; 
+            padding: 25px; 
+            border-radius: 12px; 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1); 
+            border-right: 5px solid #3498db; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+        .guideline:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 12px 35px rgba(0,0,0,0.15); 
+        }
+        .guideline h2 { 
+            color: #3498db; 
+            font-size: 1.4em; 
+            margin-top: 0; 
+            display: flex; 
+            align-items: center; 
+        }
+        .guideline h2::before { 
+            content: "📋"; 
+            margin-left: 10px; 
+            font-size: 1.2em; 
+        }
+        .steps { 
+            background: #ecf0f1; 
+            padding: 15px; 
+            border-radius: 8px; 
+            margin: 15px 0; 
+        }
+        ul { 
+            padding-right: 20px; 
+        }
+        li { 
+            margin-bottom: 10px; 
+            padding: 5px 0; 
+        }
+        .note { 
+            background: #fff3cd; 
+            border: 1px solid #ffeaa7; 
+            padding: 12px; 
+            border-radius: 6px; 
+            margin: 15px 0; 
+            font-style: italic; 
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 15px 0; 
+            background: white; 
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+        }
+        th { 
+            background: #3498db; 
+            color: white; 
+        }
+        footer { 
+            text-align: center; 
+            margin-top: 50px; 
+            padding: 20px; 
+            color: #7f8c8d; 
+            font-size: 0.9em; 
+            border-top: 1px solid #bdc3c7; 
+        }
+        @media (max-width: 768px) { 
+            body { padding: 20px 10px; } 
+            .guideline { margin: 20px 0; padding: 20px 15px; } 
+            h1 { font-size: 1.8em; } 
+        }
+        @media print { 
+            body { background: white; box-shadow: none; } 
+            .guideline { box-shadow: none; margin: 10px 0; } 
+        }
+    </style>
+</head>
+<body>
+    <h1>Edit Team Guidelines<br><small>Extracted & Translated from Nation.pdf (5 Key Items)</small></h1>
+
+    <div class="guideline" id="item1">
+        <h2>1. Correcting Typos in Item Specifics</h2>
+        <div class="steps">
+            <ul>
+                <li>Identify writing errors in item specifics (e.g., "originn factory colloor" instead of "Original Factory Color" from Google Sheet column like C:Factory Color).</li>
+                <li>Enter correct value in the appropriate row/column, then color the entire row <strong>red</strong> to mark for update.</li>
+            </ul>
+        </div>
+        <div class="note">
+            <strong>Note:</strong> Applies to <em>any</em> item specifics section—examine all faulty sections thoroughly. Fix in sheet, <strong>not</strong> in 3DSellers.
+        </div>
+    </div>
+
+    <div class="guideline" id="item2">
+        <h2>2. Determining Correct Years Range for "Years Fitted"</h2>
+        <p>Check Google Sheet (sorted by Make & Model) for accurate range.</p>
+        <div class="steps">
+            <ul>
+                <li>Example: "Ford F150 King Ranch 2005" + below "Ford F150 King Ranch 04 05 06 07 08" → Infer and enter correct range.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="guideline" id="item3">
+        <h2>3. Title Preservation</h2>
+        <div class="note">
+            <strong>Critical:</strong> Title value <strong>must never</strong> be changed—in 3DSellers <strong>or</strong> item specifics.
+        </div>
+    </div>
+
+    <div class="guideline" id="item4">
+        <h2>4. Efficient Table Editing via HTML Source</h2>
+        <div class="steps">
+            <ol>
+                <li>3DSellers → Edit → Item Description → Product Description → Click &lt;&gt; (HTML source code).</li>
+                <li>Ctrl+A → Copy entire content.</li>
+                <li>Paste into target product.</li>
+                <li>Manually update: Placement / Surface Material / Color / Trim Code.</li>
+            </ol>
+        </div>
+        <div class="note">
+            <strong>Applies to:</strong> Products differing <em>only</em> in Placement/Surface Material/Color/Trim Code (same Make & Model/Years Fitted).
+        </div>
+    </div>
+
+    <div class="guideline" id="item5">
+        <h2>5. Handling Multiple Trim Codes</h2>
+        <div class="note">
+            <strong>Rule:</strong> If two different Trim Codes exist for the <em>same</em> Make & Model and Years Fitted, enter <strong>all</strong> cases by default.
+        </div>
+    </div>
+
+    <footer>
+        Updated Jan 1, 2026 (5 Items) | Fully responsive, print-friendly (fits 1-2 pages) | Source: Nation.
+    </footer>
+</body>
+</html>
